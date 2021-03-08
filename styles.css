@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+    background: #201E29;
+    background-image: url(/images/bg-stars.svg);
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.bg-hills {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+}
+
+
+/* ---------- Timer ---------------- */
+h1 {
+    letter-spacing: 7px;
+    font-size: 1.5em;
+    padding-top: 110px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.countdown {
+    display: flex;
+    width: 688px;
+    height: 184px;
+    justify-content: space-between;
+    position: absolute;
+    top: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.number {
+    color: #FB5F85;
+    border-radius: 5px;
+    height: 70%;
+    background-color: #353651;
+    text-align: center;
+    line-height: 125px;
+    font-size: 5em;
+    box-shadow: 0 10px 0px 0px #1A1B23;
+}
+
+.time-label {
+    color: #8485A9;
+    font-size: .9em;
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+
+/*------------ Footer --------------*/
+.socials-container{
+    position: absolute;
+    bottom: 5vh ;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 136px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a img:hover {
+    filter: invert(65%) sepia(76%) saturate(3937%) hue-rotate(310deg) brightness(99%) contrast(99%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 775px) {
+    .countdown{
+        width: 327px;
+        height: 92px;
+        top: 40vh;
+    }
+    .number {
+        font-size: 2.5em;
+        line-height: 65px;
+    }
+    .time-label {
+        font-size: .6em;
+        letter-spacing: 3px;
+    }
+}
